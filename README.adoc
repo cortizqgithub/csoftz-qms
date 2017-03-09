@@ -1,0 +1,39 @@
+= csoftz-qms :: CSoftZ Quality Management System (QMS)
+
+V1.0.0-Mar.09/2017
+
+== docs 
+
+This folder contains the self-contained documentation in Asciidoctor.
+
+== app-code
+This folder contains the source code for microservices, configurations and other related material. It is divided in two folders.
+
+* *back-end:* Holds the code for the microservice, it may be in java, scala, etc. A folder with the language implementation is considered.
+* *front-end* Holds a client to consume the microservice endpoints, a folder with the technology used exists therein, e.g., desktop, mobile, web and inside
+each of it the name of the framework or library used such as nativescript, electron, etc.
+
+=== back-end
+Holds the code for the microservice, it may be in java, scala, etc. A folder with the language implementation is considered
+
+==== java
+Contains the end-points using java language, with Spring Boot/Spring ecosystem.
+
+===== admin microservice
+A maven module containeer for the JAR creation for the application, it is build using Maven with modules. Uses Spring Boot/Spring frameworks.
+
+Modules contained
+-----------------
+
+* admin-common :: Common utilities
+* admin-domain :: Domain classes
+* admin-repository :: Database accesss through Apache Cassandra
+* admin-service :: Service interface to gain data and other interactions
+* admin-api :: API  endpoints to admin microservice
+
+=== front-end
+Holds a client to consume the microservice endpoints, a folder with the technology used exists therein, e.g., desktop, mobile, web and inside
+each of it the name of the framework or library used such as nativescript, electron, etc.
+
+== resources
+This folder will hold other source of information for the project.

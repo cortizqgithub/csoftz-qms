@@ -1,0 +1,10 @@
+server:
+  port: 8081
+management:
+  security:
+    enabled: false
+spring:
+  data:
+    cassandra:
+      keyspace-name: qms_admin
+      contact-points: localhost

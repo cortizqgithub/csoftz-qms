@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.csoftz.qms.admin</groupId>
+		<artifactId>admin</artifactId>
+		<version>1.0.0.RELEASE</version>
+	</parent>
+	<groupId>com.csoftz.qms.admin.repository</groupId>
+	<artifactId>admin-repository</artifactId>
+	<name>admin-repository :: Database accesss through Apache Cassandra</name>
+	<description>admin-repository :: Database accesss through Apache Cassandra</description>
+	<dependencies>
+		<dependency>
+			<groupId>com.csoftz.qms.admin.common</groupId>
+			<artifactId>admin-common</artifactId>
+			<version>${csoftz.admin.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.csoftz.qms.admin.domain</groupId>
+			<artifactId>admin-domain</artifactId>
+			<version>${csoftz.admin.version}</version>
+		</dependency>
+	</dependencies>
+</project>
