@@ -17,12 +17,12 @@
 			<version>${csoftz.admin.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.csoftz.qms.admin.domain</groupId>
+			<groupId>com.csoftz.qms.admin.api.domain</groupId>
 			<artifactId>admin-domain</artifactId>
 			<version>${csoftz.admin.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.csoftz.qms.admin.service</groupId>
+			<groupId>com.csoftz.qms.admin.api.service</groupId>
 			<artifactId>admin-service</artifactId>
 			<version>${csoftz.admin.version}</version>
 		</dependency>

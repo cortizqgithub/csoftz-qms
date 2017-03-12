@@ -3,27 +3,27 @@
 /* Description:   Domain object for Enterprise information interface          */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
 /* Date:          Mar.09/2017                                                 */
-/* Last Modified: Mar.09/2017                                                 */
-/* Version:       1.1                                                         */
+/* Last Modified: Mar.11/2017                                                 */
+/* Version:       1.2                                                         */
 /* Copyright (c), 2017 CSoftZ                                                 */
 /*----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------
  History
  Mar.09/2017 COQ  File created.
  -----------------------------------------------------------------------------*/
-package com.csoftz.qms.admin.service;
+package com.csoftz.qms.admin.api.service;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.csoftz.qms.admin.domain.Enterprise;
+import com.csoftz.qms.admin.api.domain.Enterprise;
 
 /**
  *  Domain object for Enterprise information interface 
  * 
  * @since 1.8 (JDK), Mar.09/2017
  * @author Carlos Adolfo Ortiz Quirós (COQ)
- * @version 1.1, Mar.09/2017
+ * @version 1.2, Mar.11/2017
  *
  */
 public interface IEnterpriseService {
@@ -34,6 +34,12 @@ public interface IEnterpriseService {
 	 */
 	Enterprise save(Enterprise enterprise);
 
+	/** Stores the list of Enteprises supplied.
+	 * @param enterpriseList Data to save
+	 * @return Same given list.
+	 */
+	List<Enterprise> save(List<Enterprise> enterpriseList);
+	
 	/** Updates a record for 'Enterprise'
 	 * @param enterprise A reference to enterprise object
 	 * @return The same object received.

@@ -6,7 +6,7 @@
 		<artifactId>admin</artifactId>
 		<version>1.0.0.RELEASE</version>
 	</parent>
-	<groupId>com.csoftz.qms.admin.service</groupId>
+	<groupId>com.csoftz.qms.admin.api.service</groupId>
 	<artifactId>admin-service</artifactId>
 	<name>admin-service :: Service interface to gain data and other interactions</name>
 	<description>admin-service :: Service interface to gain data and other interactions</description>
@@ -17,12 +17,12 @@
 			<version>${csoftz.admin.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.csoftz.qms.admin.domain</groupId>
+			<groupId>com.csoftz.qms.admin.api.domain</groupId>
 			<artifactId>admin-domain</artifactId>
 			<version>${csoftz.admin.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.csoftz.qms.admin.repository</groupId>
+			<groupId>com.csoftz.qms.admin.api.repository</groupId>
 			<artifactId>admin-repository</artifactId>
 			<version>${csoftz.admin.version}</version>
 		</dependency>

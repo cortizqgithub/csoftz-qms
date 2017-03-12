@@ -1,38 +1,29 @@
 /*----------------------------------------------------------------------------*/
-/* Source File:   ADMINAPPLICATION.JAVA                                       */
-/* Description:   QMS Microservice API                                        */
+/* Source File:   CASSANDRACONFIGURATION.JAVA                                 */
+/* Description:   Configures Cassandra                                        */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
 /* Date:          Feb.23/2017                                                 */
 /* Last Modified: Mar.11/2017                                                 */
-/* Version:       1.3                                                         */
+/* Version:       1.2                                                         */
 /* Copyright (c), 2017 CSoftZ                                                 */
 /*----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------
  History
  Feb.23/2017 COQ  File created.
  -----------------------------------------------------------------------------*/
-package com.csoftz.qms.admin.api;
+package com.csoftz.qms.admin.api.config;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.cassandra.repository.config.EnableCassandraRepositories;
 
 /**
- * QMS Microservice API 
- * 
- * @since 1.8 (JDK), Feb.23/2017
+ * Configures application to allow CORS (API Web App) and other configs.
+ *
+ * @since 1.8(JDK), Feb.23/2017
  * @author Carlos Adolfo Ortiz Quirós (COQ)
  * @version 1.2, Mar.11/2017
- *
  */
-@SpringBootApplication
-public class AdminApplication {
-
-	/**
-	 * Entry point for executing the Spring Boot App.
-	 * 
-	 * @param args Command line or other parameters.
-	 */
-	public static void main(String[] args) {
-		SpringApplication.run(AdminApplication.class, args);
-	}
+@Configuration
+@EnableCassandraRepositories(basePackages = { "com.csoftz.qms.admin.api" })
+public class CassandraConfiguration {
 }

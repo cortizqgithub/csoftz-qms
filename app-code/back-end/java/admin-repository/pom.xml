@@ -6,7 +6,7 @@
 		<artifactId>admin</artifactId>
 		<version>1.0.0.RELEASE</version>
 	</parent>
-	<groupId>com.csoftz.qms.admin.repository</groupId>
+	<groupId>com.csoftz.qms.admin.api.repository</groupId>
 	<artifactId>admin-repository</artifactId>
 	<name>admin-repository :: Database accesss through Apache Cassandra</name>
 	<description>admin-repository :: Database accesss through Apache Cassandra</description>
@@ -17,7 +17,7 @@
 			<version>${csoftz.admin.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.csoftz.qms.admin.domain</groupId>
+			<groupId>com.csoftz.qms.admin.api.domain</groupId>
 			<artifactId>admin-domain</artifactId>
 			<version>${csoftz.admin.version}</version>
 		</dependency>

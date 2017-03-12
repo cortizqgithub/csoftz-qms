@@ -4,8 +4,8 @@
 /*                configs.                                                    */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
 /* Date:          Feb.23/2017                                                 */
-/* Last Modified: Mar.09/2017                                                 */
-/* Version:       1.1                                                         */
+/* Last Modified: Mar.11/2017                                                 */
+/* Version:       1.2                                                         */
 /* Copyright (c), 2017 CSoftZ                                                 */
 /*----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------
@@ -25,7 +25,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  *
  * @since 1.8(JDK), Feb.23/2017
  * @author Carlos Adolfo Ortiz Quirós (COQ)
- * @version 1.1, Mar.09/2017
+ * @version 1.2, Mar.11/2017
  */
 @Configuration
 public class AdminApiConfiguration {

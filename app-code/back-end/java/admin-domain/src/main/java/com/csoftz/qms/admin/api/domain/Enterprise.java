@@ -3,7 +3,7 @@
 /* Description:   Domain object for Enterprise information                    */
 /* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
 /* Date:          Mar.09/2017                                                 */
-/* Last Modified: Mar.10/2017                                                 */
+/* Last Modified: Mar.11/2017                                                 */
 /* Version:       1.2                                                         */
 /* Copyright (c), 2017 CSoftZ                                                 */
 /*----------------------------------------------------------------------------*/
@@ -11,7 +11,7 @@
  History
  Mar.09/2017 COQ  File created.
  -----------------------------------------------------------------------------*/
-package com.csoftz.qms.admin.domain;
+package com.csoftz.qms.admin.api.domain;
 
 import java.io.Serializable;
 
@@ -24,10 +24,10 @@ import org.springframework.data.cassandra.mapping.Table;
  * 
  * @since 1.8 (JDK), Mar.09/2017
  * @author Carlos Adolfo Ortiz Quirós (COQ)
- * @version 1.2, Mar.10/2017
+ * @version 1.2, Mar.11/2017
  *
  */
-@Table("enterpise")
+@Table("enterprise")
 public class Enterprise implements Serializable {
 
 	/**
@@ -39,15 +39,21 @@ public class Enterprise implements Serializable {
 	/**
 	 * Fields
 	 */
-	@PrimaryKey	private Long id;
-	@Column("name") private String name;
-	@Column("description") private String description;
+	@PrimaryKey	
+	private Long id = 0L;
+	
+	@Column("name") 
+	private String name = "";
+	
+	@Column("description") 
+	private String description = "";
 
 	/**
 	 * Default constructor.
 	 */
 	public Enterprise() {
 		super();
+		
 	}
 	
 	/**
